@@ -1,8 +1,56 @@
-/* OC_2_Reservia */
-/* Auteur : Maxime Robil-Leprêtre */
+/* MaximeRobilLepretre_2_15012021 */
+
 
 /************** Fonts **************/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/*
+EOT : 	IE6 – IE8
+WOFF : 	modern browsers
+WOFF2 : latest versions of the most modern browsers
+TTF : 	Safari, Android, iOS
+SVG : 	IOS
+
+font :  Raleway 
+		3 variants available
+		font-weight: 200;
+		font-weight: normal;
+		font-weight: bold;
+*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/font/raleway/Raleway-Bold.eot');
+    src: url('../assets/font/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../assets/font/raleway/Raleway-Bold.woff') format('woff'),
+        url('../assets/font/raleway/Raleway-Bold.ttf') format('truetype'),
+        url('../assets/font/raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/font/raleway/Raleway-ExtraLight.eot');
+    src: url('../assets/font/raleway/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/raleway/Raleway-ExtraLight.woff2') format('woff2'),
+        url('../assets/font/raleway/Raleway-ExtraLight.woff') format('woff'),
+        url('../assets/font/raleway/Raleway-ExtraLight.ttf') format('truetype'),
+        url('../assets/font/raleway/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/font/raleway/Raleway-Regular.eot');
+    src: url('../assets/font/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../assets/font/raleway/Raleway-Regular.woff') format('woff'),
+        url('../assets/font/raleway/Raleway-Regular.ttf') format('truetype'),
+        url('../assets/font/raleway/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /************** Variables **************/
 :root {
@@ -11,12 +59,11 @@
 	--grey: #f2f2f2;
 	--text-color: #000000;
 	--radius: 10px;
-	--shadow: box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+	--shadow: box-shadow: 0px 4px 10px 0px rgba;
 }
 
 /************** Base **************/
 html {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
@@ -27,7 +74,7 @@ body {
 	line-height: 1.6;
 	font-size: 1.6rem;
 	color: var(--text-color);
-	font-family: 'Raleway', sans-serif;
+	font-family: 'raleway', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -64,36 +111,26 @@ fieldset {
 	border: none;
 }
 
-legend,
-label {
+legend {
 	font-weight: 700;
 }
 
 img {
 	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
+	height: auto;
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 
 /************** Utility **************/
 .container {
-	display: block;
 	margin: auto;
-	max-width: 1200px;
+	max-width: 1440px;
 	padding: 0 1rem;
 }
 
-.primary {
-	color: var(--primary);
-	background-color: var(--primary);
-}
-
-.lighten-primary {
-	color: var(--lighten-primary);
-	background-color: var(--lighten-primary);
-}
-
-.grey {
-	color: var(--grey);
-	background-color: var(--grey);
-}
+/************** Header **************/
+/************** 1st section_search and filters **************/
+/************** 2nd section_lodging **************/
+/************** 3rd section_activities **************/
+/************** Footer **************/
