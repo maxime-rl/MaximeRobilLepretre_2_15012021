@@ -27,371 +27,94 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<nav>
+			<a href="">
+				<img src="assets/logo/Reservia.svg" alt="Logo de l'agence Reservia" />
+			</a>
+			<ul>
+				<li><a href="#" data-active="true">Hébergement</a></li>
+				<li><a href="#" data-active="false">Activités</a></li>
+			</ul>
+			<button type="button">S'inscrire</button>
+		</nav>
+
 		<header>
-			<nav>
-				<a href="">
-					<img src="assets/logo/Reservia.svg" alt="Logo de l'agence Reservia" />
-				</a>
-				<ul>
-					<li><a href="#" data-active="true">Hébergement</a></li>
-					<li><a href="#" data-active="false">Activités</a></li>
-				</ul>
-				<button type="button">S'inscrire</button>
-			</nav>
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p>En plein centre ville ou en pleine nature</p>
 		</header>
+
+		<form>
+			<span><i class="fas fa-map-marker-alt"></i></span>
+			<input
+				type="search"
+				id="site-search"
+				aria-label="Search through site content"
+			/>
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+
+		<!--1st section_filters -->
+		<section>
+			<h2>Filtres</h2>
+			<ul>
+				<li>
+					<i class="fas fa-money-bill-wave"></i>
+					<span>Économique</span>
+				</li>
+				<li>
+					<i class="fas fa-child"></i>
+					<span>Familial</span>
+				</li>
+				<li>
+					<i class="fas fa-heart"></i>
+					<span>Romantique</span>
+				</li>
+				<li>
+					<i class="fas fa-dog"></i>
+					<span>Animaux autorisés</span>
+				</li>
+			</ul>
+			<p>
+				<i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
+				cette ville
+			</p>
+		</section>
+
 		<main>
-			<!--1st section_search and filters -->
+			<!-- 2nd section_popular -->
 			<section>
-				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-				<p>En plein centre ville ou en pleine nature</p>
-				<form>
-					<div>
-						<span><i class="fas fa-map-marker-alt"></i></span>
-						<input
-							type="search"
-							id="site-search"
-							aria-label="Search through site content"
-						/>
-						<button type="submit"><i class="fas fa-search"></i></button>
-					</div>
-					<fieldset>
-						<legend>Filtres</legend>
-						<ul>
-							<li>
-								<i class="fas fa-money-bill-wave"></i>
-								<span>Économique</span>
-							</li>
-							<li>
-								<i class="fas fa-child"></i>
-								<span>Familial</span>
-							</li>
-							<li>
-								<i class="fas fa-heart"></i>
-								<span>Romantique</span>
-							</li>
-							<li>
-								<i class="fas fa-dog"></i>
-								<span>Animaux autorisés</span>
-							</li>
-						</ul>
-					</fieldset>
-					<p>
-						<i class="fas fa-info"></i>Plus de 500 logements sont disponibles
-						dans cette ville
-					</p>
-				</form>
-			</section>
-			<!-- 2nd section_lodging -->
-			<section>
-				<div>
-					<header>
-						<h2>Les plus populaires</h2>
-						<figure>
-							<i class="fas fa-chart-line"></i>
-						</figure>
-					</header>
-					<ul>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/hotel_soleil_matin_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_soleil_matin_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel le soleil du matin"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel Le soleil du matin</h3>
-											<p>Nuit à partir de 128<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/chambres_hotes_coeur_eau_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/chambres_hotes_coeur_eau_mobile_tablet.jpg"
-												alt="Photo d'une des chambres de la chambre d'hôte au coeur de l'eau"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Au coeur de l'eau Chambres d'hôtes</h3>
-											<p>Nuit à partir de 71<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/hotel_bleu_blanc_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_bleu_blanc_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel tout bleu et blanc"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel Tout bleu et Blanc</h3>
-											<p>Nuit à partir de 68<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h2>Hébérgement à Marseille</h2>
-					<ul>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/auberge_cannebiere_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/auberge_cannebiere_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'auberge la cannebière"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Auberge le Cannebière</h3>
-											<p>Nuit à partir de 25<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="assets/img/hebergements/hotel_port_desktop.jpg"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_port_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel du port"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel du port</h3>
-											<p>Nuit à partir de 52<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/hotel_mouettes_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_mouettes_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel les mouettes"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel les mouettes</h3>
-											<p>Nuit à partir de 76<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="assets/img/hebergements/hotel_mer_desktop.jpg"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_mer_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel de la mer"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel de la mer</h3>
-											<p>Nuit à partir de 46<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="
-													assets/img/hebergements/auberge_panier_desktop.jpg
-												"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/auberge_panier_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'auberge le panier"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Auberge Le Panier</h3>
-											<p>Nuit à partir de 23<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-						<li>
-							<article>
-								<a>
-									<figure>
-										<picture>
-											<source
-												srcset="assets/img/hebergements/hotel_amina_desktop.jpg"
-												media="(min-width: 991px)"
-											/>
-											<img
-												src="assets/img/hebergements/hotel_amina_mobile_tablet.jpg"
-												alt="Photo d'une chambre de l'hôtel chez Amina"
-											/>
-										</picture>
-										<figcaption>
-											<h3>Hôtel chez Amina</h3>
-											<p>Nuit à partir de 96<strong>&euro;</strong></p>
-											<ul>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-												<li><i class="far fa-star"></i></li>
-											</ul>
-										</figcaption>
-									</figure>
-								</a>
-							</article>
-						</li>
-					</ul>
-					<a href="#">Afficher plus</a>
-				</div>
-			</section>
-			<!-- 3rd section_activities -->
-			<section>
-				<h2>Activités à Marseille</h2>
+				<header>
+					<h2>Les plus populaires</h2>
+					<figure>
+						<i class="fas fa-chart-line"></i>
+					</figure>
+				</header>
 				<ul>
 					<li>
 						<a>
 							<figure>
 								<picture>
 									<source
-										srcset="assets/img/activites/vieux_port_desktop.jpg"
+										srcset="
+											assets/img/hebergements/hotel_soleil_matin_desktop.jpg
+										"
 										media="(min-width: 991px)"
 									/>
 									<img
-										src="assets/img/activites/vieux_port_mobile_tablet.jpg"
-										alt="Photo du vieux port de Marseille"
+										src="assets/img/hebergements/hotel_soleil_matin_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel le soleil du matin"
 									/>
 								</picture>
 								<figcaption>
-									<h3>Vieux Port</h3>
+									<h3>Hôtel Le soleil du matin</h3>
+									<p>Nuit à partir de 128<strong>&euro;</strong></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
 								</figcaption>
 							</figure>
 						</a>
@@ -401,16 +124,26 @@
 							<figure>
 								<picture>
 									<source
-										srcset="assets/img/activites/fort_pomegues_desktop.jpg"
+										srcset="
+											assets/img/hebergements/chambres_hotes_coeur_eau_desktop.jpg
+										"
 										media="(min-width: 991px)"
 									/>
 									<img
-										src="assets/img/activites/fort_pomegues_mobile_tablet.jpg"
-										alt="Photo du Fort de Pomègues de Marseille"
+										src="assets/img/hebergements/chambres_hotes_coeur_eau_mobile_tablet.jpg"
+										alt="Photo d'une des chambres de la chambre d'hôte au coeur de l'eau"
 									/>
 								</picture>
 								<figcaption>
-									<h3>Fort de Pomègues</h3>
+									<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+									<p>Nuit à partir de 71<strong>&euro;</strong></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
 								</figcaption>
 							</figure>
 						</a>
@@ -420,103 +153,349 @@
 							<figure>
 								<picture>
 									<source
-										srcset="assets/img/activites/iles_frioul_desktop.jpg"
+										srcset="
+											assets/img/hebergements/hotel_bleu_blanc_desktop.jpg
+										"
 										media="(min-width: 991px)"
 									/>
 									<img
-										src="assets/img/activites/iles_frioul_mobile_tablet.jpg"
-										alt="Photo des Iles de Frioul de Marseille"
+										src="assets/img/hebergements/hotel_bleu_blanc_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel tout bleu et blanc"
 									/>
 								</picture>
 								<figcaption>
-									<h3>Iles du Fioul</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<a>
-							<figure>
-								<picture>
-									<source
-										srcset="assets/img/activites/parc_calanques_desktop.jpg"
-										media="(min-width: 991px)"
-									/>
-									<img
-										src="assets/img/activites/parc_calanques_mobile_tablet.jpg"
-										alt="Photo du Parc National des Calanques de Marseille"
-									/>
-								</picture>
-								<figcaption>
-									<h3>Parc National des Calanques</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<a>
-							<figure>
-								<picture>
-									<source
-										srcset="assets/img/activites/notre_dame_garde_desktop.jpg"
-										media="(min-width: 991px)"
-									/>
-									<img
-										src="assets/img/activites/notre_dame_garde_mobile_tablet.jpg"
-										alt="Photo Notre Dames de la Garde de Marseille"
-									/>
-								</picture>
-								<figcaption>
-									<h3>Notre-Dame-de-la-Garde</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<a>
-							<figure>
-								<picture>
-									<source
-										srcset="assets/img/activites/parc_longchamp_desktop.jpg"
-										media="(min-width: 991px)"
-									/>
-									<img
-										src="assets/img/activites/parc_longchamp_mobile_tablet.jpg"
-										alt="Photo du Parc Longchamp de Marseille"
-									/>
-								</picture>
-								<figcaption>
-									<h3>Parc Longchamp</h3>
+									<h3>Hôtel Tout bleu et Blanc</h3>
+									<p>Nuit à partir de 68<strong>&euro;</strong></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 				</ul>
 			</section>
+			<!-- 1st article_lodging -->
+			<article>
+				<h2>Hébérgement à Marseille</h2>
+				<ul>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="
+											assets/img/hebergements/auberge_cannebiere_desktop.jpg
+										"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/auberge_cannebiere_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'auberge la cannebière"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Auberge le Cannebière</h3>
+									<p>Nuit à partir de 25<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="assets/img/hebergements/hotel_port_desktop.jpg"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/hotel_port_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel du port"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Hôtel du port</h3>
+									<p>Nuit à partir de 52<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="assets/img/hebergements/hotel_mouettes_desktop.jpg"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/hotel_mouettes_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel les mouettes"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Hôtel les mouettes</h3>
+									<p>Nuit à partir de 76<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="assets/img/hebergements/hotel_mer_desktop.jpg"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/hotel_mer_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel de la mer"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Hôtel de la mer</h3>
+									<p>Nuit à partir de 46<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="assets/img/hebergements/auberge_panier_desktop.jpg"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/auberge_panier_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'auberge le panier"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Auberge Le Panier</h3>
+									<p>Nuit à partir de 23<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a>
+							<figure>
+								<picture>
+									<source
+										srcset="assets/img/hebergements/hotel_amina_desktop.jpg"
+										media="(min-width: 991px)"
+									/>
+									<img
+										src="assets/img/hebergements/hotel_amina_mobile_tablet.jpg"
+										alt="Photo d'une chambre de l'hôtel chez Amina"
+									/>
+								</picture>
+								<figcaption>
+									<h3>Hôtel chez Amina</h3>
+									<p>Nuit à partir de 96<b>&euro;</b></p>
+									<ul>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+										<li><i class="far fa-star"></i></li>
+									</ul>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+				<a href="#">Afficher plus</a>
+			</article>
 		</main>
+
+		<!-- 2nd article_activities -->
+		<article>
+			<h2>Activités à Marseille</h2>
+			<ul>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/vieux_port_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/vieux_port_mobile_tablet.jpg"
+									alt="Photo du vieux port de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Vieux Port</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/fort_pomegues_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/fort_pomegues_mobile_tablet.jpg"
+									alt="Photo du Fort de Pomègues de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Fort de Pomègues</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/iles_frioul_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/iles_frioul_mobile_tablet.jpg"
+									alt="Photo des Iles de Frioul de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Iles du Fioul</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/parc_calanques_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/parc_calanques_mobile_tablet.jpg"
+									alt="Photo du Parc National des Calanques de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Parc National des Calanques</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/notre_dame_garde_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/notre_dame_garde_mobile_tablet.jpg"
+									alt="Photo Notre Dames de la Garde de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Notre-Dame-de-la-Garde</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a>
+						<figure>
+							<picture>
+								<source
+									srcset="assets/img/activites/parc_longchamp_desktop.jpg"
+									media="(min-width: 991px)"
+								/>
+								<img
+									src="assets/img/activites/parc_longchamp_mobile_tablet.jpg"
+									alt="Photo du Parc Longchamp de Marseille"
+								/>
+							</picture>
+							<figcaption>
+								<h3>Parc Longchamp</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</article>
+
 		<footer>
-			<div>
+			<section>
 				<h3>À propos</h3>
 				<ul>
 					<li><a href="#">Fonctionnement du site</a></li>
 					<li><a href="#">Conditions générales de vente</a></li>
 					<li><a href="#">Données et confidentialité</a></li>
 				</ul>
-			</div>
-			<div>
+			</section>
+			<section>
 				<h3>Nos hébérgements</h3>
 				<ul>
 					<li><a href="#">Charte qualité</a></li>
 					<li><a href="#">Soumettre votre hôtel</a></li>
 				</ul>
-			</div>
-			<div>
+			</section>
+			<section>
 				<h3>Assistance</h3>
 				<ul>
 					<li><a href="#">Centre d'aide</a></li>
 					<li><a href="#">Nous contacter</a></li>
 				</ul>
-			</div>
+			</section>
 		</footer>
 	</body>
 </html>
