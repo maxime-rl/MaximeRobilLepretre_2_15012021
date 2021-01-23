@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<nav>
+		<nav class="container">
 			<a href="">
 				<img src="assets/logo/Reservia.svg" alt="Logo de l'agence Reservia" />
 			</a>
@@ -38,12 +38,12 @@
 			<button type="button">S'inscrire</button>
 		</nav>
 
-		<header>
+		<header class="container">
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 		</header>
 
-		<form>
+		<form class="container">
 			<span><i class="fas fa-map-marker-alt"></i></span>
 			<input
 				type="search"
@@ -54,7 +54,7 @@
 		</form>
 
 		<!--1st section_filters -->
-		<section>
+		<section id="filters" class="container">
 			<h2>Filtres</h2>
 			<ul>
 				<li>
@@ -82,18 +82,16 @@
 
 		<main>
 			<!-- 2nd section_popular -->
-			<section>
+			<section id="popular">
 				<header>
 					<h2>Les plus populaires</h2>
-					<figure>
-						<i class="fas fa-chart-line"></i>
-					</figure>
+					<i class="fas fa-chart-line"></i>
 				</header>
 				<ul>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--popular">
+							<figure class="card__container">
+								<picture class="card__img">
 									<source
 										srcset="
 											assets/img/hebergements/hotel_soleil_matin_desktop.jpg
@@ -105,24 +103,59 @@
 										alt="Photo d'une chambre de l'hôtel le soleil du matin"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel Le soleil du matin</h3>
-									<p>Nuit à partir de 128<strong>&euro;</strong></p>
+									<p>Nuit à partir de <b>128&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--popular">
+							<figure class="card__container">
+								<picture class="card__img">
 									<source
 										srcset="
 											assets/img/hebergements/chambres_hotes_coeur_eau_desktop.jpg
@@ -134,24 +167,59 @@
 										alt="Photo d'une des chambres de la chambre d'hôte au coeur de l'eau"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Au coeur de l'eau Chambres d'hôtes</h3>
-									<p>Nuit à partir de 71<strong>&euro;</strong></p>
+									<p>Nuit à partir de <b>71&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--popular">
+							<figure class="card__container">
+								<picture class="card__img">
 									<source
 										srcset="
 											assets/img/hebergements/hotel_bleu_blanc_desktop.jpg
@@ -163,15 +231,50 @@
 										alt="Photo d'une chambre de l'hôtel tout bleu et blanc"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel Tout bleu et Blanc</h3>
-									<p>Nuit à partir de 68<strong>&euro;</strong></p>
+									<p>Nuit à partir de <b>68&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
@@ -180,13 +283,13 @@
 				</ul>
 			</section>
 			<!-- 1st article_lodging -->
-			<article>
+			<article id="lodging" class="container">
 				<h2>Hébérgement à Marseille</h2>
 				<ul>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="
 											assets/img/hebergements/auberge_cannebiere_desktop.jpg
@@ -198,24 +301,59 @@
 										alt="Photo d'une chambre de l'auberge la cannebière"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Auberge le Cannebière</h3>
-									<p>Nuit à partir de 25<b>&euro;</b></p>
+									<p>Nuit à partir de <b>25&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="assets/img/hebergements/hotel_port_desktop.jpg"
 										media="(min-width: 991px)"
@@ -225,24 +363,59 @@
 										alt="Photo d'une chambre de l'hôtel du port"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel du port</h3>
-									<p>Nuit à partir de 52<b>&euro;</b></p>
+									<p>Nuit à partir de <b>52&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="assets/img/hebergements/hotel_mouettes_desktop.jpg"
 										media="(min-width: 991px)"
@@ -252,24 +425,59 @@
 										alt="Photo d'une chambre de l'hôtel les mouettes"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel les mouettes</h3>
-									<p>Nuit à partir de 76<b>&euro;</b></p>
+									<p>Nuit à partir de <b>76&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="assets/img/hebergements/hotel_mer_desktop.jpg"
 										media="(min-width: 991px)"
@@ -279,24 +487,59 @@
 										alt="Photo d'une chambre de l'hôtel de la mer"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel de la mer</h3>
-									<p>Nuit à partir de 46<b>&euro;</b></p>
+									<p>Nuit à partir de <b>46&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="assets/img/hebergements/auberge_panier_desktop.jpg"
 										media="(min-width: 991px)"
@@ -306,24 +549,59 @@
 										alt="Photo d'une chambre de l'auberge le panier"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Auberge Le Panier</h3>
-									<p>Nuit à partir de 23<b>&euro;</b></p>
+									<p>Nuit à partir de <b>23&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="false"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a>
-							<figure>
-								<picture>
+						<a href="#" class="card card--lodging">
+							<figure class="card__container card__container--lodging">
+								<picture class="card__img card__img--lodging">
 									<source
 										srcset="assets/img/hebergements/hotel_amina_desktop.jpg"
 										media="(min-width: 991px)"
@@ -333,15 +611,50 @@
 										alt="Photo d'une chambre de l'hôtel chez Amina"
 									/>
 								</picture>
-								<figcaption>
+								<figcaption class="card__text-block">
 									<h3>Hôtel chez Amina</h3>
 									<p>Nuit à partir de 96<b>&euro;</b></p>
 									<ul>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
+										<li>
+											<i
+												class="fas fa-star"
+												data-active="true"
+												aria-hidden="true"
+											>
+											</i>
+										</li>
 									</ul>
 								</figcaption>
 							</figure>
@@ -353,13 +666,13 @@
 		</main>
 
 		<!-- 2nd article_activities -->
-		<article>
+		<article id="activities" class="container">
 			<h2>Activités à Marseille</h2>
 			<ul>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/vieux_port_desktop.jpg"
 									media="(min-width: 991px)"
@@ -376,9 +689,9 @@
 					</a>
 				</li>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/fort_pomegues_desktop.jpg"
 									media="(min-width: 991px)"
@@ -395,9 +708,9 @@
 					</a>
 				</li>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/iles_frioul_desktop.jpg"
 									media="(min-width: 991px)"
@@ -414,9 +727,9 @@
 					</a>
 				</li>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/parc_calanques_desktop.jpg"
 									media="(min-width: 991px)"
@@ -433,9 +746,9 @@
 					</a>
 				</li>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/notre_dame_garde_desktop.jpg"
 									media="(min-width: 991px)"
@@ -452,9 +765,9 @@
 					</a>
 				</li>
 				<li>
-					<a>
-						<figure>
-							<picture>
+					<a href="#" class="card card--activities">
+						<figure class="card__container card__container--activities">
+							<picture class="card__img card__img--activities">
 								<source
 									srcset="assets/img/activites/parc_longchamp_desktop.jpg"
 									media="(min-width: 991px)"
