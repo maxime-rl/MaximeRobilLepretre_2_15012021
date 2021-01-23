@@ -449,7 +449,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:active,
@@ -548,6 +548,55 @@ img {
 }
 
 /************** navbar **************/
+
+.nav {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas:
+		'logo . btn'
+		'links links links';
+	padding: 01.5rem 0 0 0;
+}
+
+.nav__logo {
+	grid-area: logo;
+	margin: 0 0 0 2rem;
+}
+
+.nav__btn {
+	grid-area: btn;
+	background-color: transparent;
+	border: 0;
+	height: 3rem;
+	margin: 1rem 2rem 0 0;
+	color: var(--primary);
+	font-size: 2rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.nav__nav-links {
+	grid-area: links;
+	display: flex;
+}
+
+.nav__nav-links li {
+	display: flex;
+	width: 50%;
+}
+
+.nav__nav-links li a {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	padding: 1rem;
+	border-bottom: 3px solid var(--grey);
+	width: 50%;
+}
+
+.nav__nav-links a:hover {
+	border-bottom-color: var(--primary);
+}
 
 /************** header **************/
 
