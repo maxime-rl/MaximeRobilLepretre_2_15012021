@@ -407,7 +407,7 @@ font :  Raleway
 	--grey: #d4d4d4;
 	--lighten-grey: #f2f2f2;
 	--white: #ffffff;
-	--black: #000000;
+	--text-color: #000000;
 	--radius: 20px;
 	--shadow: 0 4px 10px 0 #e7e5e5;
 }
@@ -424,9 +424,9 @@ body {
 	padding: 0;
 	line-height: 1.6;
 	font-size: 1.6rem; /* = 16px with font-size: 62.5% in html */
-	color: var(--black);
+	color: var(--text-color);
 	font-family: 'raleway', sans-serif;
-	scroll-behavior: smooth; /* don't work ? */
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -446,7 +446,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--black);
+	color: var(--text-color);
 }
 
 a:hover {
@@ -474,7 +474,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	-o-object-fit: contain;
-	object-fit: contain; /* for adaptive image */
+	object-fit: contain;
 }
 
 /************** Utility **************/
@@ -593,7 +593,7 @@ img {
 
 /************** navbar **************/
 
-.nav {
+.navbar {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	grid-template-areas:
@@ -602,12 +602,12 @@ img {
 	padding: 1.5rem 0 0 0;
 }
 
-.nav__logo {
+.navbar__logo {
 	grid-area: logo;
 	margin: 0 0 0 2rem;
 }
 
-.nav__btn {
+.navbar__btn {
 	grid-area: btn;
 	background-color: transparent;
 	border: 0;
@@ -619,28 +619,28 @@ img {
 	cursor: pointer;
 }
 
-.nav__btn:hover {
+.navbar__btn:hover {
 	background-color: var(--lighten-grey);
 	border-radius: 0.5rem;
 	transition: 0.3s;
 }
 
-.nav__btn:focus {
+.navbar__btn:focus {
 	outline-width: 0;
 	outline-style: solid;
 }
 
-.nav__nav-links {
+.navbar__nav-links {
 	grid-area: links;
 	display: flex;
 }
 
-.nav__nav-links li {
+.navbar__nav-links li {
 	display: flex;
 	width: 50%;
 }
 
-.nav__nav-links li a {
+.navbar__nav-links li a {
 	display: flex;
 	flex: 1;
 	justify-content: center;
@@ -651,60 +651,60 @@ img {
 	width: 50%;
 }
 
-.nav__nav-links a:hover {
+.navbar__nav-links a:hover {
 	color: var(--primary);
 	border-bottom-color: var(--primary);
 }
 
 @media (min-width: 576px) {
-	.nav {
+	.navbar {
 		grid-template-areas: 'logo links btn';
 		padding: 0;
 	}
 
-	.nav__link-logo {
+	.navbar__logo-link {
 		display: flex;
 	}
 
-	.nav__btn {
+	.navbar__btn {
 		margin: 2.3rem 2rem 0 0;
 	}
 
-	.nav__nav-links {
+	.navbar__nav-links {
 		justify-content: flex-end;
 		margin: 0;
 	}
 
-	.nav__nav-links li {
+	.navbar__nav-links li {
 		width: auto;
 		margin: 0 2rem 0 0;
 	}
 
-	.nav__nav-links li a {
+	.navbar__nav-links li a {
 		border-bottom: 0;
 		padding: 2rem 0;
 	}
 
-	.nav__nav-links li a:hover {
+	.navbar__nav-links li a:hover {
 		border-top-color: var(--primary);
 		border-bottom-color: transparent;
 	}
 }
 
 @media (min-width: 991px) {
-	.nav {
+	.navbar {
 		padding: 0 1rem 3rem 1rem;
 	}
 
-	.nav__btn {
+	.navbar__btn {
 		margin: 3.25rem 2rem 0 0;
 	}
 
-	.nav__nav-links li {
+	.navbar__nav-links li {
 		margin: 0 4rem 0 0;
 	}
 
-	.nav__nav-links li a {
+	.navbar__nav-links li a {
 		padding: 3rem;
 	}
 }
@@ -755,7 +755,7 @@ header h1 {
 }
 
 .search-form__input::placeholder {
-	color: var(--black);
+	color: var(--text-color);
 }
 
 .search-form__input:focus::placeholder {
@@ -814,20 +814,20 @@ header h1 {
 
 /************** 1st section_filters **************/
 
-.section-filters {
+.filters-section {
 	padding: 0 2rem 3rem 2rem;
 }
 
-.filters__title {
+.filters-container__title {
 	font-size: 2rem;
 }
 
-.filters__filters {
+.filters-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.filters__filter {
+.filters-list__filter {
 	display: inline-flex;
 	align-items: center;
 	border: 2px solid var(--grey);
@@ -836,7 +836,7 @@ header h1 {
 	cursor: pointer;
 }
 
-.filters__filter i {
+.filters-list__filter i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -850,28 +850,28 @@ header h1 {
 	background-color: var(--lighten-primary);
 }
 
-.filters__filter:hover i {
+.filters-list__filter:hover i {
 	color: var(--white);
 	background-color: var(--primary);
 	transition: 0.3s;
 }
 
-.filters__filter__filter-name {
+.filters-list__filter-name {
 	margin: 0 1.2rem;
 	font-weight: 700;
 }
 
-.filters__filter:hover .filters__filter__filter-name {
+.filters-list__filter:hover .filters-list__filter-name {
 	color: var(--primary);
 	transition: 0.3s;
 }
 
-.search-result__info {
+.search-result-info {
 	display: flex;
 	align-items: baseline;
 }
 
-.search-result__info i {
+.search-result-info i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -884,26 +884,26 @@ header h1 {
 	border-radius: 50%;
 }
 
-.search-result__info i::before {
+.search-result-info i::before {
 	font-size: 1.3rem;
 }
 
 @media (min-width: 991px) {
-	.section-filters {
+	.filters-section {
 		padding: 0 3rem 3rem 3rem;
 	}
 
-	.filters {
+	.filters-container {
 		display: flex;
 		align-items: baseline;
 		margin: 0;
 	}
 
-	.filters__title {
+	.filters-container__title {
 		margin: 1rem 4rem 1rem 0;
 	}
 
-	.search-result__info {
+	.search-result-info {
 		margin: 0;
 	}
 }
@@ -919,24 +919,24 @@ header h1 {
 
 /************** 2nd section_popular **************/
 
-.popular {
+.popular-section {
 	background-color: var(--lighten-grey);
 	margin: 0 0 3rem 0;
 	padding: 2rem;
 }
 
-.popular header {
+.popular-section header {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 0;
 }
 
-.popular header h2 {
+.popular-section header h2 {
 	font-size: 2.5rem;
 }
 
-.popular header i {
+.popular-section header i {
 	font-size: 2.3rem;
 }
 
@@ -949,11 +949,11 @@ header h1 {
 }
 
 @media (min-width: 991px) {
-	.popular {
+	.popular-section {
 		padding: 2rem 3rem;
 	}
 
-	.list-popular {
+	.popular-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 2rem;
@@ -962,21 +962,21 @@ header h1 {
 }
 
 @media (min-width: 1290px) {
-	.popular {
+	.popular-section {
 		flex: 0.9;
 		margin: 0px 3rem 0 0;
 		border-radius: var(--radius);
 	}
 
-	.list-popular {
+	.popular-list {
 		display: flex;
 		flex-direction: column;
 		margin: 1rem 0 2rem 0;
 	}
 }
-/************** 1st article_lodging **************/
+/************** 1st article_lodgings **************/
 
-.lodging {
+.lodgings-article {
 	margin: 0 0 5rem 0;
 	padding: 0px 2rem;
 }
@@ -1010,7 +1010,7 @@ header h1 {
 }
 
 @media (min-width: 768px) {
-	.list-lodging {
+	.lodging-list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 2rem;
@@ -1020,30 +1020,30 @@ header h1 {
 }
 
 @media (min-width: 991px) {
-	.lodging {
+	.lodgings-article {
 		padding: 0px 3rem;
 	}
 
-	.list-lodging {
+	.lodging-list {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
 @media (min-width: 1290px) {
-	.lodging {
+	.lodgings-article {
 		flex: 2.1;
 		margin: 0 3rem;
 		border-radius: var(--radius);
 		background-color: var(--lighten-grey);
 	}
 
-	.lodging h2 {
+	.lodgings-article h2 {
 		margin: 3rem 0 1rem 0;
 	}
 }
 
 /************** 2nd article_activities **************/
-.section-activities {
+.activities-article {
 	margin: 0 0 6rem 0;
 	padding: 0 2rem;
 }
@@ -1062,7 +1062,7 @@ header h1 {
 	border-radius: 15px 15px 0 0;
 }
 
-.section-activities h3 {
+.activities-article h3 {
 	font-size: 1.7rem;
 	margin: 1.2rem 1rem 1rem 2rem;
 }
@@ -1073,7 +1073,7 @@ header h1 {
 }
 
 @media (min-width: 768px) {
-	.list-activities {
+	.activities-list {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
@@ -1082,53 +1082,53 @@ header h1 {
 }
 
 @media (min-width: 991px) {
-	.section-activities {
+	.activities-article {
 		padding: 0 3rem;
 	}
 }
 
 @media (min-width: 1290px) {
-	.section-activities {
+	.activities-article {
 		margin: 5rem 0 8rem 0;
 	}
 
-	.list-activities {
+	.activities-list {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 15rem 2rem 2rem 2rem 15rem;
 		column-gap: 2rem;
 		row-gap: 2rem;
 	}
 
-	.list-activities li .card-activities {
+	.activities-list li .card-activities {
 		height: 100%;
 	}
 
-	.list-activities li:nth-child(1) {
+	.activities-list li:nth-child(1) {
 		grid-row: 1/7;
 		grid-column: 1/2;
 	}
 
-	.list-activities li:nth-child(2) {
+	.activities-list li:nth-child(2) {
 		grid-row: 1/5;
 		grid-column: 2/3;
 	}
 
-	.list-activities li:nth-child(3) {
+	.activities-list li:nth-child(3) {
 		grid-row: 5/7;
 		grid-column: 2/3;
 	}
 
-	.list-activities li:nth-child(4) {
+	.activities-list li:nth-child(4) {
 		grid-row: 1/7;
 		grid-column: 3/4;
 	}
 
-	.list-activities li:nth-child(5) {
+	.activities-list li:nth-child(5) {
 		grid-row: 1/5;
 		grid-column: 4/5;
 	}
 
-	.list-activities li:nth-child(6) {
+	.activities-list li:nth-child(6) {
 		grid-row: 5/7;
 		grid-column: 4/5;
 	}

@@ -26,17 +26,17 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body class="container">
-		<nav class="nav">
-			<a href="index.html" class="nav__link-logo">
+		<nav class="navbar">
+			<a href="index.html" class="navbar__logo-link">
 				<img
-					class="nav__logo"
+					class="navbar__logo"
 					src="assets/logo/Reservia.svg"
 					alt="Logo de l'agence Reservia"
 				/>
 			</a>
-			<button class="nav__btn" type="button">S'inscrire</button>
-			<ul class="nav__nav-links">
-				<li><a href="#lodging">Hébergement</a></li>
+			<button class="navbar__btn" type="button">S'inscrire</button>
+			<ul class="navbar__nav-links">
+				<li><a href="#lodgings">Hébergement</a></li>
 				<li><a href="#activities">Activités</a></li>
 			</ul>
 		</nav>
@@ -61,41 +61,41 @@
 			</button>
 		</form>
 		<!--1st section_filters -->
-		<section class="section-filters">
-			<div class="filters">
-				<h2 class="filters__title">Filtres</h2>
-				<ul class="filters__filters">
-					<li class="filters__filter">
+		<section class="filters-section">
+			<div class="filters-container">
+				<h2 class="filters-container__title">Filtres</h2>
+				<ul class="filters-list">
+					<li class="filters-list__filter">
 						<i class="fas fa-money-bill-wave"></i>
-						<span class="filters__filter__filter-name">Économique</span>
+						<span class="filters-list__filter-name">Économique</span>
 					</li>
-					<li class="filters__filter">
+					<li class="filters-list__filter">
 						<i class="fas fa-child"></i>
-						<span class="filters__filter__filter-name">Familial</span>
+						<span class="filters-list__filter-name">Familial</span>
 					</li>
-					<li class="filters__filter">
+					<li class="filters-list__filter">
 						<i class="fas fa-heart"></i>
-						<span class="filters__filter__filter-name">Romantique</span>
+						<span class="filters-list__filter-name">Romantique</span>
 					</li>
-					<li class="filters__filter">
+					<li class="filters-list__filter">
 						<i class="fas fa-dog"></i>
-						<span class="filters__filter__filter-name">Animaux autorisés</span>
+						<span class="filters-list__filter-name">Animaux autorisés</span>
 					</li>
 				</ul>
 			</div>
-			<p class="search-result__info">
+			<p class="search-result-info">
 				<i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
 				cette ville
 			</p>
 		</section>
 		<main>
 			<!-- 2nd section_popular -->
-			<section class="popular">
+			<section class="popular-section">
 				<header>
 					<h2>Les plus populaires</h2>
 					<i class="fas fa-chart-line"></i>
 				</header>
-				<ul class="list-popular">
+				<ul class="popular-list">
 					<li>
 						<a href="#" class="card card-popular">
 							<figure class="card__container">
@@ -293,10 +293,10 @@
 					</li>
 				</ul>
 			</section>
-			<!-- 1st article_lodging -->
-			<article id="lodging" class="lodging">
+			<!-- 1st article_lodgings -->
+			<article id="lodgings" class="lodgings-article">
 				<h2>Hébérgement à Marseille</h2>
-				<ul class="list-lodging">
+				<ul class="lodging-list">
 					<li>
 						<a href="#" class="card card-lodging">
 							<figure class="card__container card__container-lodging">
@@ -682,9 +682,9 @@
 			</article>
 		</main>
 		<!-- 2nd article_activities -->
-		<article id="activities" class="section-activities">
+		<article id="activities" class="activities-article">
 			<h2>Activités à Marseille</h2>
-			<ul class="list-activities">
+			<ul class="activities-list">
 				<li>
 					<a href="#" class="card card-activities">
 						<figure class="card__container card__container-activities">
