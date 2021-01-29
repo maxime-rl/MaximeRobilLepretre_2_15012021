@@ -368,9 +368,9 @@ TTF : 	Safari, Android, iOS
 SVG : 	IOS
 
 font :  Raleway 
-		2 variants available
-		font-weight: normal;
-		font-weight: bold;
+    2 variants available
+    font-weight: normal;
+    font-weight: bold;
 */
 
 @font-face {
