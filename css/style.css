@@ -197,10 +197,10 @@ WOFF2 : latest versions of the most modern browsers
 TTF : 	Safari, Android, iOS
 SVG : 	IOS
 
-font :  Raleway 
-    2 variants available
-    font-weight: normal;
-    font-weight: bold;
+font :  Raleway
+		2 variants available
+		font-weight: normal;
+		font-weight: bold;
 */
 
 @font-face {
@@ -237,8 +237,8 @@ font :  Raleway
 	--lighten-primary: #deebff;
 	--dark-primary: #0452c7;
 	--lighten-grey: #f2f2f2;
-	--white: #ffffff;
-	--text-color: #000000;
+	--white: #fff;
+	--text-color: #000;
 	--radius: 20px;
 	--shadow: 0 4px 10px 0 #e7e5e5;
 }
@@ -312,7 +312,8 @@ img {
 
 .container {
 	margin: auto;
-	max-width: 1640px; /* security container for very large screen */
+	/* security container for very large screen */
+	max-width: 1640px;
 }
 
 /**** Card ****/
@@ -502,12 +503,12 @@ img {
 		margin: 0 2rem 0 0;
 	}
 
-	.navbar__nav-links li a {
+	.navbar__nav-links a {
 		border-bottom: 0;
 		padding: 2rem 0;
 	}
 
-	.navbar__nav-links li a:hover {
+	.navbar__nav-links a:hover {
 		border-top-color: var(--primary);
 		border-bottom-color: transparent;
 	}
@@ -526,7 +527,7 @@ img {
 		margin: 0 4rem 0 0;
 	}
 
-	.navbar__nav-links li a {
+	.navbar__nav-links a {
 		padding: 3rem;
 	}
 }
@@ -790,7 +791,7 @@ header h1 {
 	padding: 0;
 }
 
-.popular-section header h2 {
+.popular-section h2 {
 	font-size: 2.5rem;
 }
 
@@ -822,7 +823,7 @@ header h1 {
 @media (min-width: 1290px) {
 	.popular-section {
 		flex: 0.9;
-		margin: 0px 3rem 0 0;
+		margin: 0 3rem 0 0;
 		border-radius: var(--radius);
 	}
 
@@ -839,7 +840,7 @@ header h1 {
 
 .lodgings-article {
 	margin: 0 0 5rem 0;
-	padding: 0px 2rem;
+	padding: 0 2rem;
 }
 
 .card-lodging {
@@ -882,7 +883,7 @@ header h1 {
 
 @media (min-width: 991px) {
 	.lodgings-article {
-		padding: 0px 3rem;
+		padding: 0 3rem;
 	}
 
 	.lodging-list {
@@ -963,7 +964,7 @@ header h1 {
 		row-gap: 2rem;
 	}
 
-	.activities-list li .card-activities {
+	.activities-list .card-activities {
 		height: 100%;
 	}
 
