@@ -919,6 +919,7 @@ header h1 {
 
 .card__container-activities {
 	flex-direction: column;
+	padding: 0;
 }
 
 .card__img-activities {
@@ -929,7 +930,7 @@ header h1 {
 
 .activities-article h3 {
 	font-size: 1.7rem;
-	margin: 1.2rem 1rem 1rem 2rem;
+	margin: 1.2rem 1rem 1.2rem 2rem;
 }
 
 .card-activities:hover h3 {
@@ -959,7 +960,7 @@ header h1 {
 
 	.activities-list {
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 15rem 2rem 2rem 2rem 15rem;
+		grid-template-rows: 14rem 2rem 2rem 2rem 17rem;
 		column-gap: 2rem;
 		row-gap: 2rem;
 	}
@@ -969,7 +970,7 @@ header h1 {
 	}
 
 	.activities-list li:nth-child(1) {
-		grid-row: 1/7;
+		grid-row: 1/6;
 		grid-column: 1/2;
 	}
 
@@ -979,22 +980,22 @@ header h1 {
 	}
 
 	.activities-list li:nth-child(3) {
-		grid-row: 5/7;
+		grid-row: 5/6;
 		grid-column: 2/3;
 	}
 
 	.activities-list li:nth-child(4) {
-		grid-row: 1/7;
+		grid-row: 1/6;
 		grid-column: 3/4;
 	}
 
 	.activities-list li:nth-child(5) {
-		grid-row: 1/5;
+		grid-row: 1/4;
 		grid-column: 4/5;
 	}
 
 	.activities-list li:nth-child(6) {
-		grid-row: 5/7;
+		grid-row: 4/6;
 		grid-column: 4/5;
 	}
 }
